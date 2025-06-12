@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Legends News</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+  <!-- ヘッダー -->
+  <header>
+    <h1>Apex Legends News</h1>
+  </header>
+
+  <main>
+
+    <!-- 🔽 ナビリンク -->
+    <div class="item-section">
+      <ul class="item-list">
+        <li><a href="article1.html">ホーム</a></li>
+        <li><a href="article2.html">コメント</a></li>
+        <li><a href="article3.html">サイトマップ</a></li>
+        <li><a href="article4.html">無料アプリを探すなら</a></li>
+        <li><a href="article5.html">お問い合わせ</a></li>
+        <li><a href="article6.html">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+
+    <!-- 🔽 コンセプト画像 -->
+    <div class="concept-section">
+      <img src="images/konseputoIMG.png" alt="このサイトのコンセプト">
+    </div>
+
+    <!-- 🔽 おすすめ記事スライド -->
+    <section class="slider-section">
+  <h2 class="section-title">過去の記事</h2>
+  <div class="slider-container">
+    <button class="slider-btn prev">&#9664;</button>
+    <div class="slider-track">
+      <!-- 🔽 各記事カード -->
+      <div class="slider-item">
+        <a href="article1.html">
+          <img src="images/article1.png" alt="記事1">
+          <p>武器Tier表</p>
+        </a>
+      </div>
+      <div class="slider-item">
+        <a href="article2.html">
+          <img src="images/article2.png" alt="記事2">
+          <p>マップ変更</p>
+        </a>
+      </div>
+      <!-- 必要に応じて追加 -->
+      <div class="slider-item">
+        <a href="article2.html">
+          <img src="images/article2.png" alt="記事3">
+          <p></p>
+        </a>
+      </div>
+      <div class="slider-item">
+        <a href="article2.html">
+          <img src="images/article2.png" alt="記事4">
+          <p>マップ変更</p>
+        </a>
+      </div>
+      <div class="slider-item">
+        <a href="article2.html">
+          <img src="images/article2.png" alt="記事5">
+          <p>マップ変更</p>
+        </a>
+      </div>
+      <div class="slider-item">
+        <a href="article2.html">
+          <img src="images/article2.png" alt="記事6">
+          <p>マップ変更</p>
+        </a>
+      </div>                         
+    </div>
+    <button class="slider-btn next">&#9654;</button>
+  </div>
+</section>
+
+
+    <!-- 🔽 新着記事 -->
+    <h2 class="section-title">新着記事</h2>
+    <section class="articles-row">
+      <!-- 記事1 -->
+      <article class="article-card">
+        <a href="article1.html" class="card-link">
+          <div class="image-wrapper">
+            <img src="images/sinnkyara_oltarIMG.png" alt="記事画像">
+            <div class="overlay">
+              <h2>最新リーク情報！新キャラ登場か？</h2>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- 記事2 -->
+      <article class="article-card">
+        <a href="article2.html" class="card-link">
+          <div class="image-wrapper">
+            <img src="images/pattinoteIMG.jpg" alt="記事画像">
+            <div class="overlay">
+              <h2>パッチノート：武器バランス調整まとめ</h2>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+
+    <!-- 🔽 SNSリンク -->
+    <div class="sns-links">
+      <a href="https://twitter.com/YourTwitter" target="_blank">
+        <img src="images/twitterIMG.png" alt="Twitter">
+      </a>
+      <a href="https://youtube.com/YourChannel" target="_blank">
+        <img src="images/youtube-logo-youtube-icon-transparent-free-png.webp" alt="YouTube">
+      </a>
+      <a href="https://instagram.com/YourInsta" target="_blank">
+        <img src="images/insutaIMG.webp" alt="Instagram">
+      </a>
+    </div>
+
+  </main>
+
+  <!-- 🔽 フッター -->
+  <footer>
+    <p>&copy; 2025 Apex Legends News</p>
+  </footer>
+  <script>
+  const prevBtn = document.querySelector('.slider-btn.prev');
+  const nextBtn = document.querySelector('.slider-btn.next');
+  const track = document.querySelector('.slider-track');
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -200, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: 200, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
